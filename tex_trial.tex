@@ -1,0 +1,357 @@
+\documentclass[12pt]{report}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+\begin{document}
+\title{Lecture notes on Udacity's ``Introduction to Machine Learning Class''}
+\author{Lauren E. Blake}
+
+\maketitle
+
+\begin{flushleft}
+\Large{\textit{The class contains 16 lessons as well as a Final Project.}}
+\end{flushleft}
+
+\section{Lesson 1: Welcome}
+
+\subsection{Introduction I}
+
+\begin{itemize}
+
+\item Lots of applications for machine learning across diverse fields!
+
+\end{itemize}
+
+\subsection{Introduction II}
+
+\begin{itemize}
+
+\item Keep your eyes out for applications of machine learning and data sets that you could use machine learning on. 
+
+\end{itemize}
+
+\subsection{Introduction III}
+
+\begin{itemize}
+
+\item Format: Lectures with quizzes, mini-projects at the end of each lesson.
+
+\item Final project at the end that ties together different aspects of the mini-projects. 
+
+\end{itemize}
+
+\section{Lesson 2: Naive Bayes}
+
+\subsection{ML in the Google Self-Driving Car}
+
+\begin{itemize}
+
+\item Train the self-driving car by showing car how to drive and giving the computer examples of humans driving. This is an example of a supervised classification problem.
+
+\end{itemize}
+
+\subsection{Acerous versus non-Acerous Quiz}
+
+\begin{itemize}
+
+\item Gave example of acerous animals and non-acerous examples. Then asked whether we thought a horse was acerous or not. 
+
+\item Answer: A horse is acerous (lacking horns or antlers).  
+
+\end{itemize}
+
+\subsection{Supervised Classification Examples Quiz}
+
+\begin{itemize}
+
+\item Need to have training data and then making predictions, recommendations, etc. based on the training set. 
+
+\end{itemize}
+
+\subsection{Features and Labels Musical Example Quiz}
+
+\begin{itemize}
+
+\item With a song, features could be tempo, intensity, gender of person singing it, etc. Labels are whether a person likes the song or not. 
+
+\end{itemize}
+
+\subsection{Features Visualization Quiz}
+
+\begin{itemize}
+
+\item Answer: She likes those because they are close to the other data points representing songs that the person also likes.
+
+\end{itemize}
+
+\subsection{Classification by Eye Quiz}
+
+\begin{itemize}
+
+\item Answer: Unclear because the new data point is close to two different labels. 
+
+\end{itemize}
+
+\subsection{Intro To Stanley Terrain Classification}
+
+\begin{itemize}
+
+\item Features: speed and ruggedness
+
+\end{itemize}
+
+\subsection{Speed Scatterplot: Grade and Bumpiness Quiz}
+
+\begin{itemize}
+
+\item Answer: From the picture, we can see that the terrain looks flat and smooth, particularly relative to the other pictures. 
+
+\end{itemize}
+
+\subsection{Speed Scatterplot 2}
+
+\begin{itemize}
+
+\item Answer: From the picture, we can see that the terrain looks very steep and medium bumpy. 
+
+\end{itemize}
+
+\subsection{Speed Scatterplot 3}
+
+\begin{itemize}
+
+\item Answer: From the picture, we can see that the terrain looks flat and very. 
+
+\end{itemize}
+
+\subsection{From Scatterplots to Predictions}
+
+\begin{itemize}
+
+\item Answer: The points look closer to the blue circles than the red X's. 
+
+\end{itemize}
+
+\subsection{From Scatterplots to Predictions 2}
+
+\begin{itemize}
+
+\item Answer: Unclear because the points look equally close to the blue circles than the red X's. 
+
+\end{itemize}
+
+\subsection{Scatterplots to Decision Surface Quiz}
+
+\begin{itemize}
+
+\item A decision surface parses out the training data into different features so that a data point falling on one side of the decision surface has one label and on the other side, a different label. 
+
+\item Answer: Red cross because it is on the same side as the training data with red crosses. 
+
+\end{itemize}
+
+\subsection{A Good Linear Decision Surface}
+
+\begin{itemize}
+
+\item When the decision surface is a straight line, it is a ``linear'' decision surface.
+
+\item Answer: Select the line that clearly and consistently separates the red crosses from the blue circles.  
+
+\end{itemize}
+
+\subsection{Transition into Using Naive Bayes}
+
+\begin{itemize}
+
+\item Naive Bayes is a common algorithm to find the decision surface. 
+
+\end{itemize}
+
+\subsection{NB Decision Boundary in Python}
+
+\begin{itemize}
+
+\item Have 750 training data points and make a decision boundary. 
+
+\end{itemize}
+
+\subsection{Getting Started with sklearn}
+
+\begin{itemize}
+
+\item Documentation on Naive Bayes with derivation and code 
+
+\item clf = GaussianNB() \# Create Gaussian classifier
+
+\item clf.fit(features, labels) \# Fit Gaussian classifier
+
+\item clf.predict \#Give it a point and get out a label
+
+\end{itemize}
+
+\subsection{GaussianNB Deployment on Terrain Data}
+
+\begin{itemize}
+
+\item Answer: Add the following code: \\
+
+\#Specify classifier type \\
+clf = GaussianNB() \\
+
+\bigskip
+
+\# Fit the decision boundary \\
+clf.fit(features\_train, labels\_train) \\
+
+\end{itemize}
+
+\subsection{Finding Naive Bayes Accuracy}
+
+\begin{itemize}
+
+\item Answer: See Finding\_Naive\_Bayes\_Accuracy\_Lesson on my Udacity Machine Learning GitHub repo
+
+\end{itemize}
+
+\subsection{Training and Testing Data}
+
+\begin{itemize}
+
+\item Important to train and test on different data sets (need to generalize to new data sets)
+
+\end{itemize}
+
+\subsection{Unpacking NB Using Bayes Rule}
+
+\begin{itemize}
+
+\item What is Naive Bayes?
+
+\end{itemize}
+
+\subsection{Cancer Test}
+
+\begin{itemize}
+
+\item Answer: We can see in from the diagram that the probability that someone with a positive cancer test actually has the disease is approximately 8\%. 
+
+\end{itemize}
+
+\subsection{Normalizing 1}
+
+\begin{itemize}
+
+\item Answer: The normalizing constant is 0.009+0.099 = 0.108. 
+
+\end{itemize}
+
+\subsection{Normalizing 2}
+
+\begin{itemize}
+
+\item Answer: 0.08333. Divide the cancer joint by the normalizing constant to get the posterior. 
+
+\end{itemize}
+
+\subsection{Normalizing 3}
+
+\begin{itemize}
+
+\item Answer: 0.916666. Divide the non-cancer joint by the normalizing constant to get the posterior. 
+
+\end{itemize}
+
+\subsection{Total Probability Quiz}
+
+\begin{itemize}
+
+\item Answer: 1. Add the answers from Normalizing 2 and Normalizing 3 together.
+
+\end{itemize}
+
+\subsection{Bayes Rule Diagram}
+
+\begin{equation}
+Total probability = 1 = P \big( \frac{C \mid Pos}{Normalizing constant} \big) + P\big( \frac{non-C \mid Pos}{Normalizing constant} \big)
+\end{equation}
+
+
+\subsection{Bayes Rule for Classification}
+
+\begin{itemize}
+
+\item Who is the person that is sending the email based on the words that they used? 
+
+\end{itemize}
+
+\subsection{Chris or Sara Quiz}
+
+\begin{itemize}
+
+\item Answer 1: Sara because the email contains words that she uses with higher probability than Chris. 
+
+\item Answer 2: Chris because the email contains words that she uses with higher probability than Sara. 
+
+\end{itemize}
+
+\subsection{Posterior probabilities}
+
+\begin{itemize}
+
+\item Answers: 0.5714; 1-0.5714; First find 
+
+\begin{equation}
+Prob \frac{\big(Chris \mid Email contains the words ``life deal'' \big)}{Constant}
+\end{equation}
+Then, find its complement. 
+
+\end{itemize}
+
+\subsection{Bayesian probabilities on your own}
+
+\begin{itemize}
+\item Prob \big(Chris $\mid$ Email contains the words ``love deal'' \big) = \\
+
+Prob \big(``love deal'' $\mid$ C \big)*P\big(C \big) divided by a normalizing constant \\ 
+
+where the constant is Prob \big(``love deal'' $\mid$ C \big) P\big(C) + Prob \big(``love deal'' $\mid$ S \big) P\big(S) \\
+
+Then, take the complement.
+
+\item Answers: 0.5555; 0.4444. 
+
+\end{itemize}
+
+\subsection{Why Is Naive Bayes Naive}
+
+\begin{itemize}
+
+\item Don't see underlying process (e.g. who is using the words) but get to see the outcome (e.g. the words that the person used). 
+
+\item Answer: Word order is being ignored in Bayes Theorem whereas the words used and the length of the message (in terms of which words are used) are used. 
+
+\end{itemize} 
+
+\subsection{Naive Bayes Strengths and Weaknesses}
+
+\begin{itemize}
+
+\item Pros: Easy to implement, efficient
+
+\item Cons: Can break (e.g. phrases with distinct meanings)
+
+\item Good for text classification because can treat each word as a feature. 
+
+\end{itemize}
+
+\subsection{Naive Bayes Mini-Project}
+
+\begin{itemize}
+
+\item Identify who authored a piece of text (e.g. Chris and Sara) based on previous emails. 
+
+\end{itemize}
+
+
+\end{document}
