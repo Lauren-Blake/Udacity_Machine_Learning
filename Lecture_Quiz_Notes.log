@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  25 MAY 2017 14:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  3 JUN 2017 18:26
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -117,83 +117,95 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
 {/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 21.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 25.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 21.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 25.
  [1] [2] [3]
-Overfull \hbox (25.45209pt too wide) in paragraph at lines 197--198
+Overfull \hbox (25.45209pt too wide) in paragraph at lines 201--202
 \OT1/cmr/m/n/12 learn.org/stable/modules/generated/sklearn.naive[]bayes.Gaussia
 nNB.html. 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 205--206
+Underfull \hbox (badness 10000) in paragraph at lines 209--210
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 207--209
+Underfull \hbox (badness 10000) in paragraph at lines 211--213
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 212--214
+Underfull \hbox (badness 10000) in paragraph at lines 216--218
 
  []
 
 
-Overfull \hbox (3.39534pt too wide) in paragraph at lines 223--224
+Overfull \hbox (3.39534pt too wide) in paragraph at lines 227--228
 []\OT1/cmr/m/n/12 Answer: See Les-son[]2[]Section[]20[]Quiz:Calculating[]NB[]Ac
 curacy on my
  []
 
 [4]
-Overfull \hbox (13.97598pt too wide) detected at line 287
+Overfull \hbox (13.97598pt too wide) detected at line 301
 \OML/cmm/m/it/12 Totalprobability \OT1/cmr/m/n/12 = 1 = \OML/cmm/m/it/12 P[][][
 ] \OT1/cmr/m/n/12 + \OML/cmm/m/it/12 P[][][]
  []
 
 [5]
-Underfull \hbox (badness 10000) in paragraph at lines 324--325
+Underfull \hbox (badness 10000) in paragraph at lines 338--339
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 326--327
+Underfull \hbox (badness 10000) in paragraph at lines 340--341
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 328--329
+Underfull \hbox (badness 10000) in paragraph at lines 342--343
 
  []
 
-[6] [7] (./Lecture_Quiz_Notes.aux) ) 
+[6]
+Overfull \hbox (85.28366pt too wide) in paragraph at lines 378--379
+[]\OT1/cmr/m/n/12 See code in ''/Udac-ity[]Machine[]Learning/Lesson[]2[]Naive[]
+Bayes[]Mini[]Project[]Code.py'' 
+ []
+
+[7] [8]
+Overfull \hbox (0.23055pt too wide) in paragraph at lines 491--492
+[]\OT1/cmr/m/n/12 Answer: See "Les-son[]3[]Section[]12[]Coding[]Up[]the[]SVM fo
+r code. Also,
+ []
+
+[9] [10] [11] (./Lecture_Quiz_Notes.aux) ) 
 Here is how much of TeX's memory you used:
  957 strings out of 493089
  11264 string characters out of 6134842
- 67146 words of memory out of 5000000
+ 68146 words of memory out of 5000000
  4481 multiletter control sequences out of 15000+600000
  12443 words of font info for 48 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 27i,6n,24p,238b,182s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2015/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2015/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2015/texmf-dist/fonts/typ
-e1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type
-1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/pub
-lic/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmti12.pfb>
-Output written on Lecture_Quiz_Notes.pdf (8 pages, 106779 bytes).
+ 27i,6n,24p,301b,182s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2015/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2015/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2015/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2015/texmf-dist/font
+s/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2015/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2015/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2015/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmti12.pfb>
+Output written on Lecture_Quiz_Notes.pdf (12 pages, 118514 bytes).
 PDF statistics:
- 63 PDF objects out of 1000 (max. 8388607)
- 44 compressed objects within 1 object stream
+ 75 PDF objects out of 1000 (max. 8388607)
+ 52 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

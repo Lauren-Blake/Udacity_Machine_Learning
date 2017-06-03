@@ -11,7 +11,6 @@ def NBAccuracy(features_train, labels_train, features_test, labels_test):
     ### create classifier
     clf = GaussianNB()
 
-    ### fit the classifier on the training features and labels
     clf.fit(features_train, labels_train)
 
     ### use the trained classifier to predict labels for the test features

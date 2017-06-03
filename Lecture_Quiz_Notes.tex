@@ -10,8 +10,12 @@
 
 \begin{flushleft}
 \Large{\textit{The class contains 16 lessons as well as a Final Project.}}
+
+\bigskip
+\Large{\textit{My code for the exercises and projects can be found on my GitHub Repo: https://github.com/Lauren-Blake/Udacity\_Machine\_Learning.}}
 \end{flushleft}
 
+\bigskip 
 \section{Lesson 1: Welcome}
 
 \subsection{Introduction I}
@@ -240,11 +244,21 @@ clf.fit(features\_train, labels\_train) \\
 
 \end{itemize}
 
+\subsection{Bayes Rule}
+
 \subsection{Cancer Test}
 
 \begin{itemize}
 
 \item Answer: We can see in from the diagram that the probability that someone with a positive cancer test actually has the disease is approximately 8\%. 
+
+\end{itemize}
+
+\subsection{Prior and Posterior}
+
+\begin{itemize}
+
+\item Answers: 0.009 and  0.099
 
 \end{itemize}
 
@@ -355,13 +369,267 @@ Then, take the complement.
 
 \end{itemize}
 
-\subsection{Naive Bayes Mini-Project}
+\subsection{Congrats on Learning Naive Bayes}
+
+\subsection{Lesson 2 Naive Bayes Mini-Project}
 
 \begin{itemize}
 
-\item Identify who authored a piece of text (e.g. Chris and Sara) based on previous emails. 
+\item See code in ''/Udacity\_Machine\_Learning/Lesson\_2\_Naive\_Bayes\_Mini\_Project\_Code.py''
+
+\item: Answer to Quiz on Author ID Accuracy: no. of Chris training emails: 7936, no. of Sara training emails: 7884. Accuracy: 0.973833902162
+
+\item Answer to Quiz on Timing Your NB Classifier: training time: 1.417 s, predicting time: 0.162 s. Training time is greater than the prediction time. 
 
 \end{itemize}
+
+
+
+\section{SVM, Support Vector Machines}
+
+\subsection{Welcome to SVM}
+
+\begin{itemize}
+
+\item SVM is a very popular algorithm
+
+\end{itemize}
+
+\subsection{Quiz: Separating a Line}
+
+\begin{itemize} 
+
+\item SVM takes in data from 2+ classes as input and draws a line to separate the classes
+
+\item Answer: The diagonal line that separates the Xs and the Os.
+
+\end{itemize}
+
+\subsection{Quiz: Choosing Between Separating Lines}
+
+\begin{itemize} 
+
+\item Answer: The vertical line is the best separator.
+
+\end{itemize}
+
+
+\subsection{Quiz: Choosing Between Separating Lines}
+
+\begin{itemize} 
+
+\item Want to choose a line that maximizes the distances to the nearest points in either class. Margin- maximizes distance to the nearest point.  
+
+\item Answer: Something else because it maximizes the distances to the nearest points in either class (to be the most robust to classification errors). 
+
+\end{itemize}
+
+\subsection{Quiz: Practice with Margins}
+
+\begin{itemize} 
+
+\item Answer: The middle line maximizes the margin. It is the most robust to classification errors. 
+
+\end{itemize}
+
+\subsection{Quiz: SVMs and Tricky Data Distributions}
+
+\begin{itemize} 
+
+\item Answer: The line that fully separates the red from the blue points (diagonally downward). 
+
+\item SVM prioritizes correct classification over maximizing the margin. 
+
+\end{itemize}
+
+\subsection{Quiz: SVM Response to Outliers}
+
+\begin{itemize} 
+
+\item What happens when no decision surface exists that completely separates the classes of data?
+
+\item Answer: Do the best it can
+
+\end{itemize}
+
+\subsection{Quiz: SVM Outlier Practice}
+
+\begin{itemize} 
+
+\item SVM ignores extreme outliers. 
+
+\item Answer: The line on the right is the best separator. 
+
+\end{itemize}
+
+\subsection{Handoff to Katie}
+
+\begin{itemize} 
+
+\item Making your own SVM
+
+\end{itemize}
+
+\subsection{SVM in SKlearn}
+
+\begin{itemize}
+
+\item Code: Import statement, training data, training features, create classifier, fit classifier, do a prediction.
+
+\item Important: import svm, classifier is svm.SVC()
+
+\end{itemize}
+
+\subsection{SVM Decision Boundary}
+
+\begin{itemize}
+
+\item Unlike with our Naive Bayes classifier, the SVM decision boundary will be a straight line. 
+
+\end{itemize}
+
+\subsection{SVM Coding Up the SVM}
+
+\begin{itemize}
+
+\item Answer: See "Lesson\_3\_Section\_12\_Coding\_Up\_the\_SVM for code. Also, the accuracy is 0.92, so it does better than the Naive Bayes classifier. 
+
+\end{itemize}
+
+
+\subsection{Nonlinear SVMs}
+
+\begin{itemize}
+
+\item SVM can do complicated shapes in the decision boundary. 
+
+\end{itemize}
+
+
+\subsection{Quiz: Nonlinear Data}
+
+\begin{itemize}
+
+\item Answer: No. Given our definition so far, SVMs will not separate this dataset.
+
+\end{itemize}
+
+\subsection{Quiz: A New Feature}
+
+\begin{itemize}
+
+\item Can put x squared and y squared into SVM in addition to x and y inputs. 
+
+\item Answer: Yes, this is now separable. 
+
+\end{itemize}
+
+
+\subsection{Visualizing A New Feature}
+
+\begin{itemize}
+
+\item Can do a linear transformation, which means we can look at it in a new coordinate system. 
+
+\end{itemize}
+
+\subsection{Quiz: Separating with the New Feature}
+
+\begin{itemize}
+
+\item Answer: Yes, the data classes are now separable. 
+
+\end{itemize}
+
+\subsection{Quiz: Practice Making a New Feature}
+
+\begin{itemize}
+
+\item Answer: Using the absolute value of X makes the data classes separable. 
+
+\end{itemize}
+
+
+\subsection{Kernel Trick}
+
+\begin{itemize}
+
+\item Use kernels to change x,y input space to a much larger input (high dimensional) space. And this can lead to a non-linear separation for x, y
+
+\end{itemize}
+
+
+\subsection{Quiz: Playing Around with Kernel Trick}
+
+\begin{itemize}
+
+\item How to create an SVC and specify a kernel type
+
+\item Answer: All + more. There are many kernel types. 
+
+\end{itemize}
+
+
+\subsection{Quiz: Kernel and Gamma}
+
+\begin{itemize}
+
+\item Parameters in machine learning- arguments passed when you create your classifier (prior to fitting)
+
+\item Parameters for an SVM- kernel (e.g. linear, rbf); C; gamma
+
+\item Answer: The plot on the far right best represents an SVM with a linear kernel and a gamma = 1.0. 
+
+\end{itemize}
+
+\subsection{Quiz: SVM C Parameter}
+
+\begin{itemize} 
+
+\item C- controls the tradeoff between a smooth decision boundary and classifying training points correctly. 
+
+\item Answer: A smaller value of C will cause the optimizer to look for a larger margin (even if this means that the decision boundary will misclassify more points. Therefore, a large C means that you expect that you will get more training points correct. 
+
+\end{itemize}
+
+\subsection{Quiz: Gamma Parameter}
+
+\begin{itemize}
+
+\item Gamma- defines how far the influence of a single training example reaches. Low values = far reach (even the points far from the potential decision boundary get taken into account when evaluating where to put the decision boundary) and high values = close. 
+
+\end{itemize}
+
+\subsection{Quiz: Overfitting}
+
+\begin{itemize}
+
+\item Overfitting is a common problem in machine learning
+
+\item Answer: C, Gamma, and the Kernel type are all parameters that can impact fit/overfitting.
+
+\end{itemize}
+
+\subsection{SVM Strengths and Weaknesses}
+
+\begin{itemize}
+
+\item SVM works well in complicated domains where there is a clear margin of separation.
+
+\item SVM doesn't work well in large data sets or data sets with lots of noise (e.g. overlapping classes)
+
+\end{itemize}
+
+
+\section{Lesson 4}
+\subsection{SVM Strengths and Weaknesses}
+
+\begin{itemize}
+
+\item Check
+
+\end{itemize}
+
 
 
 \end{document}
