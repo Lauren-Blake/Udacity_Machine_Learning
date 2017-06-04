@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  3 JUN 2017 19:30
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  3 JUN 2017 23:12
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -202,7 +202,37 @@ Overfull \hbox (21.04027pt too wide) in paragraph at lines 632--633
 0.884527872582. 
  []
 
-[11] [12] (./Lecture_Quiz_Notes.aux) ) 
+[11] [12] [13]
+Overfull \hbox (1.8323pt too wide) in paragraph at lines 756--757
+\OT1/cmr/m/n/12 ary) has min[]sample[]split = 2 and the plot on the right (with
+ a ''cleaner''
+ []
+
+[14] [15]
+Overfull \hbox (26.36374pt too wide) in paragraph at lines 880--881
+[]\OT1/cmr/m/n/12 Answer: En-tropy = -1((2/3)*log2(2/3) + (1/3)*log2(1/3)) = 0.
+91829583405. 
+ []
+
+
+Overfull \hbox (18.46521pt too wide) in paragraph at lines 892--893
+[]\OT1/cmr/m/n/12 Information gain = En-tropy(parent) - [weighted av-er-age]*en
+tropy(children)
+ []
+
+[16] [17]
+Overfull \hbox (92.14192pt too wide) in paragraph at lines 971--972
+[]\OT1/cmr/m/n/12 See code in ''/Udac-ity[]Machine[]Learning/Lesson[]4[]Decisio
+n[]Tree[]Mini[]Project[]Code.py'' 
+ []
+
+
+Overfull \hbox (9.18755pt too wide) in paragraph at lines 973--974
+[]\OT1/cmr/m/n/12 Answer to Quiz on Your First Email DT: The ac-cu-racy is 0.97
+8953356086. 
+ []
+
+[18] (./Lecture_Quiz_Notes.aux) ) 
 Here is how much of TeX's memory you used:
  957 strings out of 493089
  11264 string characters out of 6134842
@@ -210,20 +240,20 @@ Here is how much of TeX's memory you used:
  4481 multiletter control sequences out of 15000+600000
  12443 words of font info for 48 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 27i,6n,24p,301b,182s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2015/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2015/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2015/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2015/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type
-1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/pub
-lic/amsfonts/cm/cmti12.pfb>
-Output written on Lecture_Quiz_Notes.pdf (13 pages, 120520 bytes).
+ 27i,6n,24p,441b,182s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2015/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmr12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmr17.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmti12.pfb>
+Output written on Lecture_Quiz_Notes.pdf (19 pages, 128721 bytes).
 PDF statistics:
- 79 PDF objects out of 1000 (max. 8388607)
- 55 compressed objects within 1 object stream
+ 98 PDF objects out of 1000 (max. 8388607)
+ 68 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

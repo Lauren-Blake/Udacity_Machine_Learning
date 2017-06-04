@@ -655,14 +655,333 @@ Then, take the complement.
 
 \end{itemize}
 
-\section{Lesson 4}
-\subsection{Lesson 4 Unit 1}
+\section{Lesson 4: Decision Trees}
+
+\subsection{Welcome to Decision Trees}
 
 \begin{itemize}
 
-\item Check
+\item Decision trees are the 3rd supervised classification algorithm that we are going to cover in this course. 
+
+\item Decision trees are used frequently in machine learning. 
 
 \end{itemize}
+
+\subsection{Quiz: Linearly Separable Data}
+
+\begin{itemize}
+
+\item The data in the plot are not linearly separable (would need 2 lines). 
+
+\end{itemize}
+
+\subsection{Quiz: Multiple Linear Questions}
+
+\begin{itemize}
+
+\item Decision trees allow you to ask multiple linear questions (one after another). 
+
+\item Answer: No, if it is not windy, then you stop.
+
+\end{itemize}
+
+\subsection{Quiz: Constructing a Decision Tree First Split}
+
+\begin{itemize}
+
+\item Answer: The initial split should be a X less than 3. 
+
+\end{itemize}
+
+\subsection{Quiz: Constructing a Decision Tree 2nd Split}
+
+\begin{itemize}
+
+\item Answer: The second split should be on Y less than 2. 
+
+\end{itemize}
+
+\subsection{Quiz: Class Labels After Second Split}
+
+\begin{itemize}
+
+\item Answer: If Y is less than 2, then the class label is the red cross. 
+
+\end{itemize}
+
+\subsection{Quiz: Constructing a Decision Tree/ 3rd Split}
+
+\begin{itemize}
+
+\item Answer: The best split when X is less than 3 is Y = 4. 
+
+\item We will use an algorithm to find the decision tree boundary(ies). 
+
+\end{itemize}
+
+\subsection{Quiz: Coding a Decision Tree}
+
+\begin{itemize}
+
+\item Answer: See "Lesson\_4\_Section\_8\_Coding\_A\_Decision\_Tree for code to produce a plot with the data and decision boundary. 
+
+\end{itemize}
+
+\subsection{Quiz: Decision Tree Accuracy}
+
+\begin{itemize}
+
+\item See "Lesson\_4\_Section\_9\_Decision\_Tree\_Accuracy.py'' code. 
+
+\item Answer: The accuracy is 0.908.
+
+\end{itemize}
+
+\subsection{Quiz: Decision Tree Parameters}
+
+\begin{itemize}
+
+\item Many parameters that we can try to tune. 
+
+\item We are first going to look at the min\_sample\_split. This might be helpful for our overfitting problem because we can control the amount of splits on the tree. This asks the question about how many samples can be in the node before we stop splitting. The default is 2 samples. 
+
+\item Answer: 1. You would not be able to split a node (or leaf) with 1 sample when using the min\_sample\_split default of 2. 
+
+\end{itemize}
+
+\subsection{Quiz: Min Samples Split}
+
+\begin{itemize}
+
+\item Answer: The plot on the left (with a more complicated decision boundary) has min\_sample\_split = 2 and the plot on the right (with a ''cleaner'' decision boundary) has a  min\_sample\_split = 50. 
+
+\end{itemize}
+
+\subsection{Quiz: Decision Tree Accuracy}
+
+\begin{itemize}
+
+\item See "Lesson\_4\_Section\_12\_Decision\_Tree\_Accuracy.py'' code. 
+
+\item Answer: The accuracy when min\_sample\_split = 2 is 0.908 and when min\_sample\_split = 50 is 0.912. 
+
+\end{itemize}
+
+\subsection{Data Impurity and Entropy}
+
+\begin{itemize}
+
+\item Entropy- controls how a decision tree decides where to split the data (measure of impurity in a bunch of examples). For example, in this data set, we are trying to determine whether the car should go fast or slow. However, there might also be a speed limit that is enforced at certain places, so even if the terrain warrants that we go fast, if there is an enforced speed limit, we will go slow. 
+
+\end{itemize}
+
+\subsection{Quiz: Minimizing Impurity in Split}
+
+\begin{itemize}
+
+\item Answer: The plot with speed limit on the x-axis has a higher purity than that plot with bumpiness on the x-axis. 
+
+\end{itemize}
+
+\subsection{Formula of Entropy}
+
+\begin{itemize}
+
+\item When all examples are in the same class, the entropy is 0. When all examples are spread across all classes, the entropy is 1. 
+
+\end{itemize}
+
+\subsection{Quiz: Entropy Calculation Part 1}
+
+\begin{itemize}
+
+\item Answer: There are 2 slow observations. 
+
+\end{itemize}
+
+\subsection{Quiz: Entropy Calculation Part 2}
+
+\begin{itemize}
+
+\item Answer: There are 4 total observations. 
+
+\end{itemize}
+
+\subsection{Quiz: Entropy Calculation Part 3}
+
+\begin{itemize}
+
+\item Answer: 0.5 observations are slow. 
+
+\end{itemize}
+
+\subsection{Quiz: Entropy Calculation Part 4}
+
+\begin{itemize}
+
+\item Answer: 0.5 observations are fast. 
+
+\end{itemize}
+
+\subsection{Quiz: Entropy Calculation Part 5}
+
+\begin{itemize}
+
+\item The entropy is -1(0.5*log2(0.5)*2) = 1. 
+
+\end{itemize}
+
+\subsection{Information Gain}
+
+\begin{itemize}
+
+\item Information gain is defined as the entropy(parent) - [weighted average]entropy(children)
+
+\item The decision tree algorithm maximizes the information gain
+
+\end{itemize}
+
+\subsection{Quiz: Information Gain Calculation Part 1}
+
+\begin{itemize}
+
+\item Answer: 3 observations have a grade of ''steep''. 
+
+\end{itemize}
+
+\subsection{Quiz: Information Gain Calculation Part 2}
+
+\begin{itemize}
+
+\item Answer: The entropy of this node is 0 because all of the observations are in the same class (fast). 
+
+\end{itemize}
+
+\subsection{Quiz: Information Gain Calculation Part 3}
+
+\begin{itemize}
+
+\item Answer: p\_slow = 2/3 because 2/3 of the observations are slow. 
+
+\end{itemize}
+
+\subsection{Quiz: Information Gain Calculation Part 4}
+
+\begin{itemize}
+
+\item Answer: p\_fast = 1/3 because 1/3 of the observations are fast.  
+
+\end{itemize}
+
+\subsection{Quiz: Information Gain Calculation Part 5}
+
+\begin{itemize}
+
+\item Answer: Entropy = -1((2/3)*log2(2/3) + (1/3)*log2(1/3)) = 0.91829583405. 
+
+\end{itemize}
+
+\subsection{Quiz: Information Gain Calculation}
+
+\begin{itemize}
+
+\item Entropy of parent = 1
+
+\item Entropy of children = (3/4)*(0.9184) + (1/4)*(0)
+
+\item Information gain = Entropy(parent) - [weighted average]*entropy(children) = 1 - 0.6888 = 0.3112.
+
+\item Answer: The information gain that we get if we split based on grade = 0.3112. 
+
+\end{itemize}
+
+\subsection{Quiz: Information Gain Calculation Part 7}
+
+\begin{itemize}
+
+\item Entropy of parent = -1*((1/2)*log2(1/2)*2) = 1
+
+\item Answer: When you sort based on bumpiness, there is still one slow and one fast observation in the category of ''bumpy'' and one slow and one fast observation in the category of ''smooth''. The observations are still spread evenly throughout the classes. Therefore, the entropy of bumpy is 1. 
+
+\end{itemize}
+
+\subsection{Quiz: Information Gain Calculation Part 8}
+
+\begin{itemize}
+
+\item Answer: When you sort based on bumpiness, there is still one slow and one fast observation in the category of ''bumpy'' and one slow and one fast observation in the category of ''smooth''. The observations are still spread evenly throughout the classes. Therefore, the entropy of flat is 1. 
+
+
+\end{itemize}
+
+\subsection{Quiz: Information Gain Calculation Part 9}
+
+\begin{itemize}
+
+\item Entropy of the parent = 1
+
+\item Weighted average of the entropy of the children = 1
+
+\item Answer: The information gain is 0. (1-1). 
+
+\end{itemize}
+
+\subsection{Quiz: Information Gain Calculation Part 10}
+
+\begin{itemize}
+
+\item Answer: When you sort based on speed limit, there are 2 slow observations when there is an enforced speed limit and 2 fast observations when there is not an enforced speed limit. The observations are separated by class and therefore, the entropy is 0. The information gain is 1-0=1. 
+
+\end{itemize}
+
+\subsection{Tuning Criterion Parameter}
+
+\begin{itemize}
+
+\item Default criterion for the Decision Tree Classifer in sklearn is ''gini'' (the Gini impurity) but it can also support ''entropy'' for information gain. 
+
+\end{itemize}
+
+\subsection{Bias-Variance Dilemma}
+
+\begin{itemize}
+
+\item High bias- the machine learning algorithm doesn't learn/isn't highly affected by the training
+
+\item High variance- the algorithm learns a lot on the data, to the point that it can't generalize to novel data input types. 
+
+\item Ideally, you want something that learns from the training, but isn't highly limited by only the data types in the training. 
+
+\end{itemize}
+
+\subsection{DT Strengths and Weaknesses}
+
+\begin{itemize}
+
+\item Strengths- easy to use, results are clearly interpretable. Can build larger classifiers (ensemble methods). 
+
+\item Limitations- prone to overfitting (so have to be careful with parameter tunes).   
+
+\end{itemize}
+
+\subsection{Decision Tree Mini-Project}
+
+\begin{itemize}
+
+\item See code in ''/Udacity\_Machine\_Learning/Lesson\_4\_Decision\_Tree\_Mini\_Project\_Code.py''
+
+\item Answer to Quiz on Your First Email DT: The accuracy is 0.978953356086. 
+
+\item Answer to Quiz on Speeding Up Via Feature Selection: There are 3,785 features in the training data. 
+
+\item Answer to Quiz on Changing the Number of Features: When you change the percentile of training data from 10 to 1, the number of features is 379. 
+
+\item Answer to Quiz on SelectPercentile and Comparing:  A large value for percentile lead to a more complex decision tree (because you now have to classify many more features). 
+
+\item Answer to Quiz on Accuracy Using 1\% of Features: The accuracy is 0.966439135381. 
+
+\end{itemize}
+
 
 
 
