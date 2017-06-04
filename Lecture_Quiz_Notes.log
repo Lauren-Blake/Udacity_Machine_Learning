@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  3 JUN 2017 18:26
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  3 JUN 2017 19:30
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -179,12 +179,30 @@ Bayes[]Mini[]Project[]Code.py''
  []
 
 [7] [8]
-Overfull \hbox (0.23055pt too wide) in paragraph at lines 491--492
+Overfull \hbox (0.23055pt too wide) in paragraph at lines 494--495
 []\OT1/cmr/m/n/12 Answer: See "Les-son[]3[]Section[]12[]Coding[]Up[]the[]SVM fo
 r code. Also,
  []
 
-[9] [10] [11] (./Lecture_Quiz_Notes.aux) ) 
+[9] [10]
+Overfull \hbox (48.51099pt too wide) in paragraph at lines 626--627
+[]\OT1/cmr/m/n/12 See code in ''/Udac-ity[]Machine[]Learning/Lesson[]3[]SVM[]Mi
+ni[]Project[]Code.py'' 
+ []
+
+
+Overfull \hbox (37.82909pt too wide) in paragraph at lines 628--629
+[]\OT1/cmr/m/n/12 Answer to Quiz on SVM Au-thor ID Ac-cu-racy: The ac-cu-racy i
+s 0.984072810011. 
+ []
+
+
+Overfull \hbox (21.04027pt too wide) in paragraph at lines 632--633
+[]\OT1/cmr/m/n/12 Answer to Quiz on A Smaller Train-ing Set: The ac-cu-racy is 
+0.884527872582. 
+ []
+
+[11] [12] (./Lecture_Quiz_Notes.aux) ) 
 Here is how much of TeX's memory you used:
  957 strings out of 493089
  11264 string characters out of 6134842
@@ -193,19 +211,19 @@ Here is how much of TeX's memory you used:
  12443 words of font info for 48 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  27i,6n,24p,301b,182s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2015/texmf-dist/f
-onts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2015/texmf-dist/fo
-nts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2015/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2015/texmf-dist/font
-s/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2015/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2015/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2015/texmf-dist/fonts/typ
-e1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmti12.pfb>
-Output written on Lecture_Quiz_Notes.pdf (12 pages, 118514 bytes).
+</usr/local/texlive/2015/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2015/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2015/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2015/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmti12.pfb>
+Output written on Lecture_Quiz_Notes.pdf (13 pages, 120520 bytes).
 PDF statistics:
- 75 PDF objects out of 1000 (max. 8388607)
- 52 compressed objects within 1 object stream
+ 79 PDF objects out of 1000 (max. 8388607)
+ 55 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
