@@ -3,6 +3,7 @@
 \usepackage{amsfonts}
 
 \begin{document}
+
 \title{Lecture notes on Udacity's ``Introduction to Machine Learning Class''}
 \author{Lauren E. Blake}
 
@@ -723,7 +724,7 @@ Then, take the complement.
 
 \begin{itemize}
 
-\item Answer: See "Lesson\_4\_Section\_8\_Coding\_A\_Decision\_Tree for code to produce a plot with the data and decision boundary. 
+\item Answer: See ``Lesson\_4\_Section\_8\_Coding\_A\_Decision\_Tree for code to produce a plot with the data and decision boundary. 
 
 \end{itemize}
 
@@ -731,7 +732,7 @@ Then, take the complement.
 
 \begin{itemize}
 
-\item See "Lesson\_4\_Section\_9\_Decision\_Tree\_Accuracy.py'' code. 
+\item See ``Lesson\_4\_Section\_9\_Decision\_Tree\_Accuracy.py'' code. 
 
 \item Answer: The accuracy is 0.908.
 
@@ -845,7 +846,7 @@ Then, take the complement.
 
 \begin{itemize}
 
-\item Answer: 3 observations have a grade of ''steep''. 
+\item Answer: 3 observations have a grade of ``steep''. 
 
 \end{itemize}
 
@@ -901,7 +902,7 @@ Then, take the complement.
 
 \item Entropy of parent = -1*((1/2)*log2(1/2)*2) = 1
 
-\item Answer: When you sort based on bumpiness, there is still one slow and one fast observation in the category of ''bumpy'' and one slow and one fast observation in the category of ''smooth''. The observations are still spread evenly throughout the classes. Therefore, the entropy of bumpy is 1. 
+\item Answer: When you sort based on bumpiness, there is still one slow and one fast observation in the category of ``bumpy'' and one slow and one fast observation in the category of ''smooth''. The observations are still spread evenly throughout the classes. Therefore, the entropy of bumpy is 1. 
 
 \end{itemize}
 
@@ -909,7 +910,7 @@ Then, take the complement.
 
 \begin{itemize}
 
-\item Answer: When you sort based on bumpiness, there is still one slow and one fast observation in the category of ''bumpy'' and one slow and one fast observation in the category of ''smooth''. The observations are still spread evenly throughout the classes. Therefore, the entropy of flat is 1. 
+\item Answer: When you sort based on bumpiness, there is still one slow and one fast observation in the category of ``bumpy'' and one slow and one fast observation in the category of ''smooth''. The observations are still spread evenly throughout the classes. Therefore, the entropy of flat is 1. 
 
 
 \end{itemize}
@@ -938,7 +939,7 @@ Then, take the complement.
 
 \begin{itemize}
 
-\item Default criterion for the Decision Tree Classifer in sklearn is ''gini'' (the Gini impurity) but it can also support ''entropy'' for information gain. 
+\item Default criterion for the Decision Tree Classifer in sklearn is ``gini'' (the Gini impurity) but it can also support ''entropy'' for information gain. 
 
 \end{itemize}
 
@@ -968,7 +969,7 @@ Then, take the complement.
 
 \begin{itemize}
 
-\item See code in ''/Udacity\_Machine\_Learning/Lesson\_4\_Decision\_Tree\_Mini\_Project\_Code.py''
+\item See code in ``/Udacity\_Machine\_Learning/Lesson\_4\_Decision\_Tree\_Mini\_Project\_Code.py''
 
 \item Answer to Quiz on Your First Email DT: The accuracy is 0.978953356086. 
 
@@ -982,7 +983,34 @@ Then, take the complement.
 
 \end{itemize}
 
+\section{Lesson 5: Choose Your Own Algorithm}
+
+\subsection{Algorithm Options}
+
+\begin{itemize}
+
+\item Can choose between k nearest neighbors, adaboost, and random forest
+
+\item k nearest neighbors- classic, simple, easy-to-follow
+
+\item adaboost and random forest- are ensemble methods, which means they are meta classifiers build from decision trees
+
+\end{itemize}
+
+\subsection{Quiz: Choose-Your-Own-Algorithm}
+
+\begin{itemize}
+
+\item k nearest neighbors- training phase stores feature vectors and class labels of the training data. During classification, each of the points in the test data is assigned a label which is most frequent among a given number of training samples to that test point. The number of training samples is user-defined, k. Frequently used distance metrics include Euclidean distance (for continuous variables) and the overlap metric/Hamming distance (for discrete variables such as text classification). For example, if k = 10 and of the 10 training points closest distance-wise to the test point, 7 are classified as ``red'' and 3 are classified as ``blue'', the test (query) point will be classified as ``red''. 
+
+\item Random forest- operate by constructing many decision trees during training and outputting the model of classes or mean prediction of the trees. This process helps to correct for the fact that decision trees often overfit (low bias but very high variance on) the training set.
+
+\item See code in ``/Udacity\_Machine\_Learning/Lesson\_5\_Choose\_ \\
+Your\_Own\_Algorithm\_Code\_Random\_Forests.py''. Accuracy of the classifier using the terrain data is 0.91200000000000003.
+
+\end{itemize}
 
 
 
 \end{document}
+
